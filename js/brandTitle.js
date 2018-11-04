@@ -1,4 +1,4 @@
-$(function(){
+require(['jquery','artTemplate','common'],function($,template,common){
 
     $.ajax({
         type: 'get',
@@ -6,6 +6,7 @@ $(function(){
         success: function(info){
             console.log(info);
             $('.category ul').html(template('tmp',info))
+            
         }
     })
 })

@@ -1,4 +1,5 @@
-$(function(){
+require(['jquery','artTemplate','common'],function($,template,common){
+
 
     $.ajax({
         type: 'get',

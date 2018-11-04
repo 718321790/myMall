@@ -1,6 +1,9 @@
-$(function(){
+require(['jquery','artTemplate','common'],function($,template,common){
 
-    var brandtitleid = getSearch(location.search).brandtitleid
+    var brandtitleid = common.getSearch(location.search).brandtitleid
+    var brandTitle = common.getSearch(location.search).brandTitle.replace('十大品牌','').replace(' ','')
+    // console.log(brandTitle.length)
+    $('.brand span').text(brandTitle)
     var pagesize = 4
     
     $.ajax({
@@ -25,8 +28,11 @@ $(function(){
         success: function(info){
             console.log(info)
             $('.category ol').html(template('tmp2',info))  
-            
+            if (info.result.length === 0) {
+                return
+            }
             var productid = info.result[0].productId
+            
 
 
             $.ajax({

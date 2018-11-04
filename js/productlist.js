@@ -1,6 +1,7 @@
-$(function () {
+require(['jquery','artTemplate','common'],function($,template,common){
 
-    var search = getSearch(location.search)
+
+    var search = common.getSearch(location.search)
 
     var categoryid = search.categoryid
     var pageid = $('#page').val() || 1

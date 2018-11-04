@@ -1,4 +1,4 @@
-$(function(){
+require(['jquery','artTemplate','iscroll','common'],function($,template,IScroll,common){
 
     var titleid //ul's total width
 
@@ -70,18 +70,18 @@ $(function(){
                     
                     //领取了几张
                     // console.log(num);
-                    info.hasGet = fn(e.productCouponRemain,'<b>','</b>') 
+                    info.hasGet = common.fn(e.productCouponRemain,'<b>','</b>') 
                     
                     // 进度条当前宽
-                    info.progress = fn(e.productCouponRemain,'</em><span>','</span></i>')
+                    info.progress = common.fn(e.productCouponRemain,'</em><span>','</span></i>')
                     
                     //领取几元优惠券和链接
-                    info.discountP = fn(e.productCoupon,'target="_blank">','</a>')
+                    info.discountP = common.fn(e.productCoupon,'target="_blank">','</a>')
                     
-                    info.discountPURL = fn(e.productCoupon,'href="','" target=')
+                    info.discountPURL = common.fn(e.productCoupon,'href="','" target=')
                     
                     // 下单链接
-                    info.buyURL = fn(e.productHref,'href="','" target=')                    
+                    info.buyURL = common.fn(e.productHref,'href="','" target=')                    
                     
                 })
                 $('.discount .content').html(template('tmp1',info))

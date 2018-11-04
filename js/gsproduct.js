@@ -1,4 +1,5 @@
-$(function(){
+require(['jquery','artTemplate','common'],function($,template,common){
+
 
     var shopObj,areaObj,target,areaid = 0,shopid=0;
     $.ajax({

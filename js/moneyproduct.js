@@ -1,5 +1,6 @@
-$(function(){
-    var productid  = +getSearch(location.search).productid 
+require(['jquery','artTemplate','common'],function($,template,common){
+
+    var productid  = +common.getSearch(location.search).productid 
 
     $.ajax({
         url: 'http://127.0.0.1:9090/api/getmoneyctrlproduct',

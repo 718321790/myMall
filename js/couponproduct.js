@@ -1,7 +1,8 @@
-$(function(){
+require(['jquery','artTemplate','common'],function($,template,common){
 
-    var couponid = getSearch(location.search).couponId
-    var couponTitle = getSearch(location.search).couponTitle
+
+    var couponid = common.getSearch(location.search).couponId
+    var couponTitle = common.getSearch(location.search).couponTitle
 
     $('.app-header h2').text(couponTitle+'优惠券')
 

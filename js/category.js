@@ -1,4 +1,4 @@
-$(function(){
+require(['jquery','artTemplate','common'],function($,template,common){
     $.ajax({
         type:'get',
         url: 'http://127.0.0.1:9090/api/getcategorytitle',

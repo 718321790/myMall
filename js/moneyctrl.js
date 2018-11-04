@@ -1,4 +1,5 @@
-$(function(){
+require(['jquery','artTemplate','common'],function($,template,common){
+
 
     var pageid = $('#page').val() || 0
 
@@ -38,11 +39,11 @@ $(function(){
             // 改变页码重新渲染
             $('#page').on('change' ,function () {
                 pageid = $('option:selected').val() - 1
-                $('option[value='+ pageid +']').attr('selected',true).siblings().attr('selected',false)
+                $('option[value='+ (pageid + 1) +']').attr('selected',true).siblings().attr('selected',false)
+                
                               
                 render()
-
-                
+                $('#page').val($('option[selected]').val())
             })
 
             // 点击上一页下一页按钮功能
