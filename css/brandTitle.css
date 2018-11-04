@@ -1,0 +1,57 @@
+.app {
+  background-color: #fff;
+}
+.cate-title {
+  font-size: 0.37333333rem;
+  height: 1.09333333rem;
+  line-height: 1.06666667rem;
+  padding: 0 0.2rem;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  background: linear-gradient(180deg, #ffffff 0%, #eeeeee 100%);
+}
+.category .brand {
+  margin: 0.33333333rem 0.2rem;
+  background-color: #f6f6f6;
+  border: 1px solid #ccc;
+  height: 1.06666667rem;
+  line-height: 1.06666667rem;
+  color: #7c3507;
+  font-size: 0.42666667rem;
+  padding-left: 0.26666667rem;
+}
+.category > ul {
+  border-top: 1px solid #ccc;
+}
+.category > ul > li:last-child {
+  border: none;
+}
+.category > ul > li a {
+  display: block;
+}
+.category > ul > li .title {
+  border-bottom: 1px solid #ccc;
+  height: 1.06666667rem;
+  background-color: #ededed;
+  font-size: 0.48rem;
+  font-weight: 700;
+  letter-spacing: 4px;
+}
+.category > ul > li .title .icon-fr {
+  width: 1.06666667rem;
+  height: 100%;
+  margin-right: 0.46666667rem;
+}
+.category > ul > li .title .sprite {
+  line-height: 1.06666667rem;
+  display: block;
+  width: 1.06666667rem;
+  height: 0.85333333rem;
+  background: url('../images/icon_bar.png');
+  background-size: 5.86666667rem 3.52rem;
+  background-position: -2.53333333rem 0;
+  transform: scale(0.75) rotate(-90deg);
+}
+.category > ul > li .title span {
+  padding: 0.21333333rem 0.46666667rem;
+}

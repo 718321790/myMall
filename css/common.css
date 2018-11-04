@@ -1,0 +1,204 @@
+.app {
+  min-width: 320px;
+  max-width: 750px;
+  margin: 0 auto;
+  position: relative;
+  background-color: #f1f1f1;
+}
+.app-header {
+  height: 1.33333333rem;
+  width: 100%;
+  max-width: 750px;
+  background-color: #ff841d;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+  z-index: 999;
+}
+.app-header .logo {
+  display: block;
+  margin-top: 0.33333333rem;
+  margin-left: 0.46666667rem;
+}
+.app-header .logo img {
+  width: 4.94666667rem;
+  height: 0.66666667rem;
+}
+.app-header .download {
+  display: block;
+  width: 0.90666667rem;
+  height: 0.90666667rem;
+  margin-top: 0.26666667rem;
+  margin-right: 0.33333333rem;
+}
+.app-header .download img {
+  width: 0.90666667rem;
+  height: 0.90666667rem;
+}
+.app-search {
+  height: 1.33333333rem;
+  width: 100%;
+  background-color: #fff;
+  margin-top: 1.33333333rem;
+}
+.app-search .btn-search {
+  width: 1.73333333rem;
+  height: 0.8rem;
+  background-color: #ff841d;
+  border-radius: 0.4rem;
+  font-size: 0.42666667rem;
+  color: #fff;
+  text-align: center;
+  line-height: 0.8rem;
+  margin: 0.26666667rem;
+  margin-left: 0;
+}
+.app-search .search-left {
+  overflow: hidden;
+  height: 100%;
+  padding: 0 0.26666667rem;
+}
+.app-search .search-left input {
+  font-size: 0.42666667rem;
+  width: 100%;
+  height: 0.8rem;
+  margin: 0.26666667rem 0;
+  padding-left: 0.53333333rem;
+  border-radius: 0.4rem;
+  background-color: #f1f1f1;
+}
+.app-footer {
+  height: 2.53333333rem;
+  margin-top: 0.73333333rem;
+  background-color: #efefef;
+}
+.app-footer .footer-fn a {
+  border: 1px solid #ccc;
+  font-size: 0.37333333rem;
+  width: 30%;
+  height: 0.93333333rem;
+  display: block;
+  float: left;
+  text-align: center;
+  line-height: 0.93333333rem;
+}
+.app-footer .footer-fn a.backTop {
+  width: 40%;
+}
+.app-footer .footer-fn a.backTop .target {
+  position: relative;
+}
+.app-footer .footer-fn a.backTop img {
+  width: 0.4rem;
+  height: 0.4rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(-120%, 10%);
+}
+.app-footer .footer-cont {
+  height: 1.6rem;
+  text-align: center;
+  padding: 0.2rem 0;
+}
+.app-footer .footer-cont .cont1 {
+  height: 0.8rem;
+}
+.app-footer .footer-cont .mobile {
+  color: #ff384a;
+}
+.app-footer .footer-cont a,
+.app-footer .footer-cont span {
+  font-size: 0.32rem;
+}
+.app-footer .footer-cont p {
+  font-size: 0.26666667rem;
+}
+#disstorck {
+  width: 3.66666667rem;
+  margin: 0 auto;
+  font-size: 0.34666667rem;
+  padding: 0.26666667rem;
+  box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.2);
+}
+#disstorck li {
+  box-sizing: content-box;
+  position: relative;
+  border-bottom: 1px dashed #ccc;
+  padding: 0 0.26666667rem;
+  height: 0.6rem;
+}
+#disstorck li a strong {
+  text-align: right;
+  position: absolute;
+  right: 0.26666667rem;
+  top: 0;
+  color: #f2760e;
+}
+.cu-content-pl {
+  padding: 0 0.26666667rem;
+}
+.cu-content-pl .tit {
+  font-size: 0.45333333rem;
+  line-height: 1.17333333rem;
+  height: 1.17333333rem;
+}
+.cu-content-pl .reply .form {
+  border: 1px solid #ccc;
+}
+.cu-content-pl .reply .form textarea {
+  height: 2rem;
+}
+.cu-content-pl .reply .ctrl {
+  background-color: #fbfbfb;
+  height: 1rem;
+  position: relative;
+}
+.cu-content-pl .reply .ctrl input {
+  display: block;
+  height: 100%;
+  width: 2.66666667rem;
+  background-color: #ff841d;
+  color: #fff;
+  border: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 0.45333333rem;
+}
+.cu-content-pl .list .ui-border-b {
+  padding: 0.4rem 0;
+}
+.cu-content-pl .list .ui-border-b::after {
+  content: '';
+  display: block;
+  clear: both;
+  height: 0;
+}
+.cu-content-pl .list .ui-border-b .userimg {
+  float: left;
+  width: 1.33333333rem;
+}
+.cu-content-pl .list .ui-border-b .userimg img {
+  width: 1.06666667rem;
+  height: 1.06666667rem;
+  border-radius: 50%;
+}
+.cu-content-pl .list .ui-border-b .con {
+  font-size: 0.4rem;
+  overflow: hidden;
+}
+.cu-content-pl .list .ui-border-b .con .name .username {
+  float: left;
+  color: #8bc7db;
+  font-size: 0.37333333rem;
+}
+.cu-content-pl .list .ui-border-b .con .name .time {
+  float: right;
+  font-size: 0.32rem;
+  color: #999;
+}
+.cu-content-pl .list .ui-border-b .con .content {
+  line-height: 0.66666667rem;
+}

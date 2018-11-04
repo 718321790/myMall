@@ -1,0 +1,46 @@
+.category > ul {
+  border-top: 1px solid #ccc;
+}
+.category > ul > li:last-child {
+  border: none;
+}
+.category > ul > li .title {
+  border-bottom: 1px solid #ccc;
+  height: 1.06666667rem;
+  background-color: #ededed;
+  font-size: 0.48rem;
+  font-weight: 700;
+  letter-spacing: 4px;
+}
+.category > ul > li .title .icon-fr {
+  width: 1.06666667rem;
+  height: 100%;
+  margin-right: 0.46666667rem;
+}
+.category > ul > li .title .sprite {
+  line-height: 1.06666667rem;
+  display: block;
+  width: 1.06666667rem;
+  height: 0.85333333rem;
+  background: url('../images/icon_bar.png');
+  background-size: 5.86666667rem 3.52rem;
+  background-position: -2.53333333rem 0;
+  transform: scale(0.75) rotate(-90deg);
+}
+.category > ul > li .title span {
+  padding: 0.21333333rem 0.46666667rem;
+}
+.category > ul ol {
+  background-color: #f9f9f9;
+  display: none;
+}
+.category > ul ol li {
+  height: 1.06666667rem;
+  float: left;
+  width: 33.3%;
+  font-size: 0.4rem;
+  text-align: center;
+  line-height: 1.06666667rem;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}

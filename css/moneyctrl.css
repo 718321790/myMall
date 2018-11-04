@@ -1,0 +1,63 @@
+.discount {
+  font-size: 0.37333333rem;
+  margin-top: 1.33333333rem;
+}
+.discount .content li {
+  height: 3.46666667rem;
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+}
+.discount .content li .left {
+  padding: 0.4rem;
+}
+.discount .content li .left img {
+  width: 2.66666667rem;
+  height: 2.66666667rem;
+}
+.discount .content li .right {
+  padding: 0.4rem;
+  font-size: 0.37333333rem;
+}
+.discount .content li .right .top {
+  height: 2.26666667rem;
+}
+.discount .content li .right .price {
+  color: #ff5c06;
+}
+.discount .content li .right .target {
+  color: #666;
+  font-size: 0.34666667rem;
+}
+.numbox {
+  background-color: #fff;
+  height: 1.26666667rem;
+  padding: 0.26666667rem 0.53333333rem 0;
+}
+.numbox a {
+  font-size: 0.37333333rem;
+  display: block;
+  text-align: center;
+  width: 2.2rem;
+  height: 0.93333333rem;
+  line-height: 0.93333333rem;
+  border-radius: 0.13333333rem;
+  box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(180deg, #efefef 0%, #d7d7d7 100%);
+}
+.numbox a:nth-of-type(1) {
+  margin-right: 1.2rem;
+  float: left;
+}
+.numbox a:nth-of-type(2) {
+  float: right;
+}
+.numbox select {
+  width: 2rem;
+  height: 0.93333333rem;
+  text-align: center;
+  margin-right: 1.2rem;
+  background-color: #fff;
+  padding: 0.13333333rem;
+  font-size: 0.4rem;
+}

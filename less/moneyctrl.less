@@ -1,0 +1,71 @@
+@import 'variable';
+
+
+.discount{
+    
+    font-size: 28rem/@base;
+    margin-top: 100rem/@base;
+
+    .content{
+        li{
+            height: 260rem/@base;
+            width: 100%;
+            background-color: #fff;
+            border-bottom: 1px solid #ccc;
+            .left{
+                padding: 30rem/@base;
+                img{
+                    width: 200rem/@base;
+                    height: 200rem/@base;                    
+                }
+            }
+            .right{
+                padding: 30rem/@base;   
+                font-size: 28rem/@base; 
+                .top{
+                    height: 170rem/@base;
+                } 
+                .price{
+                    color: #ff5c06;
+                }  
+                .target{
+                    color: #666;
+                    font-size: 26rem/@base;      
+                }         
+            }
+        }
+    }
+}
+
+.numbox{
+    background-color: #fff;
+    height: 95rem/@base;
+    padding: 20rem/@base 40rem/@base 0;
+    a{
+        font-size: 28rem/@base;
+        display: block;
+        text-align: center;
+        width: 165rem/@base;
+        height: 70rem/@base;
+        line-height: 70rem/@base;
+        border-radius:10rem/@base;
+        box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.3);
+        background: linear-gradient(180deg,#efefef 0%, #d7d7d7 100%);
+        &:nth-of-type(1){
+            margin-right: 90rem/@base;
+            float: left;
+        }
+        &:nth-of-type(2){
+            float: right;
+        }
+    }
+    select{
+        width: 150rem/@base;
+        height: 70rem/@base;
+        text-align: center;
+        margin-right: 90rem/@base;   
+        background-color: #fff; 
+        padding: 10rem/@base;   
+        font-size: 30rem/@base ;
+    }
+}

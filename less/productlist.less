@@ -1,0 +1,96 @@
+@import 'variable';
+
+.product{
+    font-size: 26rem/@base;
+    .title{
+        height: 82rem/@base;
+        line-height: 80rem/@base;
+        padding: 0 15rem/@base;
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        background: linear-gradient(180deg,#ffffff 0%,#eeeeee 100%);     
+        .btn-choice{
+
+            width: 135rem/@base;
+            // border: 1px solid #ccc;
+            height: 60rem/@base;
+            background: linear-gradient(180deg,#dbdbdb 0%, #fafafa 100%);
+            text-align: center;
+            line-height: 60rem/@base;
+            margin: 9rem/@base 0;
+            border-radius: 10rem/@base 10rem/@base 5rem/@base 5rem/@base;
+            box-shadow: 1px 1px 1px 1px rgba(0,0,0,.3);
+        }
+    }
+    .main{
+        li{
+            a{
+                display: block;
+            }
+            height: 260rem/@base;
+            width: 100%;
+            background-color: #fff;
+            border-bottom: 1px solid #ccc;
+            .left{
+                padding: 30rem/@base;
+                img{
+                    width: 200rem/@base;
+                    height: 200rem/@base;                    
+                }
+            }
+            .right{
+                padding: 30rem/@base;   
+                font-size: 28rem/@base; 
+                .top{
+                    // height: 170rem/@base;
+                    p{
+                        padding: 20rem/@base 0;
+                    }
+                } 
+                .price{
+                    color: #e92602;
+                }  
+                .target{
+                    color: #666;
+                    font-size: 28rem/@base;  
+                    span:last-child{
+                        margin-left: 5rem/@base;
+                    }    
+                }         
+            }
+        }
+    }
+
+    .numbox{
+        background-color: #fff;
+        height: 95rem/@base;
+        padding: 20rem/@base 40rem/@base 0;
+        a{
+            
+            display: block;
+            text-align: center;
+            width: 165rem/@base;
+            height: 70rem/@base;
+            line-height: 70rem/@base;
+            border-radius:10rem/@base;
+            box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.3);
+            background: linear-gradient(180deg,#efefef 0%, #d7d7d7 100%);
+            &:nth-of-type(1){
+                margin-right: 90rem/@base;
+                float: left;
+            }
+            &:nth-of-type(2){
+                float: right;
+            }
+        }
+        select{
+            width: 150rem/@base;
+            height: 70rem/@base;
+            text-align: center;
+            margin-right: 90rem/@base;   
+            background-color: #fff; 
+            padding: 10rem/@base;   
+            font-size: 30rem/@base ;
+        }
+    }
+}

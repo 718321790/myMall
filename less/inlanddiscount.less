@@ -1,0 +1,46 @@
+@import 'variable';
+
+.main{
+    margin-top: 100rem/@base;
+    .item{
+        width: 50%;
+        float: left;
+        padding: 30rem/@base;
+        background-color: #fff;
+        font-size: 28rem/@base;
+        position: relative;
+        a{
+            display: block;
+        }
+        &:nth-child(2n-1){
+            border-right: 1px solid #ccc;
+            border-bottom: 1px solid #ccc;
+        }
+        &:nth-child(2n){
+            border-bottom: 1px solid #ccc;
+        }
+        .imgbox{
+            img{
+                height: 290rem/@base;
+                width: 320rem/@base;
+            }
+        }
+        p{
+            margin: 10rem/@base 0;
+        }
+        .tit{
+            font-weight: 700;
+            font-size: 30rem/@base;   
+            height: 80rem/@base;     
+        }
+        .price{
+            color: #ff6f1c;
+        }
+        .bottom{
+            font-size: 26rem/@base;    
+            color: #999;    
+            
+        }
+        
+    }
+}

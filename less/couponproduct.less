@@ -1,0 +1,107 @@
+@import 'variable';
+.app{
+    background-color: #fff;
+}
+.main{
+    margin-top: 100rem/@base;
+    width: 100%;
+    // background-color: aqua;
+
+    .tit{
+        height: 70rem/@base;
+        line-height: 70rem/@base;
+        font-size: 26rem/@base;
+        text-align: center;
+        color: #999;
+    }
+    ul{
+        li{
+            width: 100%;
+            padding: 20rem/@base 30rem/@base 30rem/@base 20rem/@base;
+            border-bottom: 1px solid #ccc;
+            .imgbox{
+                width: 200rem/@base;
+                height: 162rem/@base;
+                float: left;
+                margin-right: 20rem/@base;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .content{
+                overflow: hidden;
+                font-size: 28rem/@base;
+                color: #000;
+                
+                .price{
+                    font-weight: 700;
+                    line-height: 60rem/@base;
+                }
+                .tips{
+                    padding: 35rem/@base 0 25rem/@base;
+                    color: #ed8737;
+                }
+            }
+        }
+    }
+}
+
+.modal-wrapper{
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(51, 51, 51, .8);
+
+    .off{
+        position: absolute;
+        right: 20rem/@base;
+        top: 20rem/@base;
+        img{
+            width: 80rem/@base;
+            height: 80rem/@base; 
+        }
+    }
+    .modal{
+        width: 400rem/@base;
+        height: 380rem/@base;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50% ,-50%);
+        .imgbox{
+            height: 100%;
+            width: 100%;
+            font-size: 24rem/@base;
+            img{
+                height: 100%;
+                width: 100%;
+                font-size: 24rem/@base;
+            }
+        }
+        .left-arrow{
+            border-radius: 20rem/@base;
+            img{
+                width: 128rem/@base;
+                height: 128rem/@base;              
+            }
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translate(-100%,-50%);
+        }
+        .right-arrow{
+            img{
+                width: 128rem/@base;
+                height: 128rem/@base;                
+            }
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translate(100%,-50%);
+        }
+    }
+}

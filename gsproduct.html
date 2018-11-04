@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>凑单品</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./lib/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/common2.css">
+    <link rel="stylesheet" href="./css/gsproduct.css">
+    <script src="./lib/flexible/flexible.js"></script>
+</head>
+
+<body>
+    <div class="app">
+        <!-- 头部 -->
+        <div class="app-header clearfix">
+            <a class="back" href="javascript:history.back();"></a>
+            <h2>凑单品</h2>
+            <a href="#" class="download fr">
+                <img src="./images/header_app.png" alt="">
+            </a>
+        </div>
+
+        <div class="nav">
+            <ul class="clearfix">
+                <li class="shop">
+                    <a href="javascript:;" data-shopId='0'>
+                        <span>京东</span> 
+                        <i class="fa fa-caret-up"></i>
+                    </a>
+                </li>
+                <li class="area">
+                    <a href="javascript:;">
+                        <span>华北</span>
+                        <i class="fa fa-caret-up"></i>                                               
+                    </a>
+                </li>
+                <li class="">
+                    <a href="javascript:;">
+                        全部价格
+                    </a>
+                </li>
+            </ul>
+            <div class="right">
+                <img src="./images/search.png" alt="">
+            </div>
+            <ol>
+                <!-- <li>京东</li>
+                <li>一号店</li>
+                <li>天猫超市</li> -->
+            </ol>
+        </div>
+
+        <div class="main clearfix">
+            <!-- <div class="item">
+                <div class="imgbox">
+                    <img src="./images/321.jpg" alt="">
+                </div>
+                <div class="content">
+                    <p class="tit one-txt-cut">西域美农新疆特产五星和田红枣250g*2</p>
+                    <div class="bottom clearfix">
+                        <div class="left fl">￥0.79</div>
+                        <div class="right fr">去凑单</div>
+                    </div>
+                </div>
+                
+            </div> -->
+            <!-- 挖个坑 -->
+        </div>
+
+
+
+
+
+
+
+
+        <!-- 底部 -->
+        <div class="app-footer">
+            <div class="footer-fn clearfix">
+                <a href="#">
+                    <span>登录</span>
+                </a>
+                <a href="#">
+                    <span>注册</span>
+                </a>
+                <a href="javascript:;" class="backTop">
+                    <span class="target">
+                        <img src="./images/top.jpg" alt="">返回顶部</span>
+                </a>
+            </div>
+            <div class="footer-cont">
+                <div class="cont1">
+                    <a href="#" class="mobile">手机APP下载</a>
+                    <a href="#">慢慢买手机版</a>
+                    <span style="color: #7f8388;">--掌上比价平台</span>
+                </div>
+                <a href="#" style="display: block;color: #7f8388;">m.manmanbuy.com</a>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/template" id="tmp">
+        {{each result v i}}
+            <li class='shop' data-shopid='{{v.shopId}}'>{{v.shopName}}</li>
+        {{/each}}
+    </script>
+
+    <script type="text/template" id="tmp1">
+        {{each result v i}}
+            <li class='area' data-areaid='{{v.areaId}}'>{{v.areaName}}</li>
+        {{/each}}
+    </script>
+
+    <script type="text/template" id="tmp2">
+        {{each result v i}}
+        <div class="item">
+            <div class="imgbox">
+                <img src="{{v.productImg}}" alt="{{v.productName}}">
+            </div>
+            <div class="content">
+                <p class="tit one-txt-cut">{{v.productName}}</p>
+                <div class="bottom clearfix">
+                    <div class="left fl">{{v.productPrice}}</div>
+                    <div class="right fr">去凑单</div>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </script>
+
+
+    <script src="./lib/jquery/jquery.min.js"></script>
+    <script src="./lib/artTemplate/template-web.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/gsproduct.js"></script>
+</body>
+
+</html>

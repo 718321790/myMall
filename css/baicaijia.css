@@ -1,0 +1,157 @@
+.nav {
+  margin-top: 1.33333333rem;
+  height: 1.06666667rem;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin-right: 1rem;
+  background-color: #fff;
+}
+.nav li {
+  float: left;
+  height: 1.06666667rem;
+  padding: 0 0.26666667rem;
+}
+.nav li.active a {
+  border-bottom: 2px solid #d90000;
+}
+.nav li a {
+  font-size: 0.4rem;
+  display: block;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  line-height: 1.06666667rem;
+}
+.nav .right {
+  border-left: 1px solid #ddd;
+  width: 1rem;
+  height: 1.06666667rem;
+  background-color: #fbfbfb;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.nav .right img {
+  width: 0.72rem;
+  height: 0.64rem;
+  margin: 0.21333333rem 0.13333333rem;
+}
+.discount {
+  font-size: 0.37333333rem;
+}
+.discount .content a {
+  display: block;
+}
+.discount .content li {
+  margin-top: 0.13333333rem;
+  width: 100%;
+  background-color: #fff;
+}
+.discount .content li > .left {
+  padding: 0.2rem;
+  width: 3.86666667rem;
+  height: 3.86666667rem;
+}
+.discount .content li > .left img {
+  display: block;
+  width: 3.46666667rem;
+  height: 3.46666667rem;
+}
+.discount .content li > .right {
+  padding: 0.2rem 0.2rem 0.2rem 0;
+  font-size: 0.37333333rem;
+  overflow: hidden;
+  height: 3.86666667rem;
+  position: relative;
+}
+.discount .content li > .right .top {
+  height: 1.06666667rem;
+}
+.discount .content li > .right .price {
+  color: #fc353a;
+  height: 0.64rem;
+  margin-top: 0.2rem;
+  font-size: 0.48rem;
+}
+.discount .content li > .right .price i {
+  font-size: 0.45333333rem;
+  font-style: normal;
+}
+.discount .content li > .right .price em {
+  font-style: normal;
+  font-size: 0.32rem;
+  margin-left: 0.2rem;
+}
+.discount .content li > .right .price del {
+  text-decoration: line-through;
+  color: #999;
+  font-size: 0.32rem;
+  margin-left: 0.33333333rem;
+}
+.discount .content li > .right .t1 {
+  margin-top: 0.26666667rem;
+}
+.discount .content li > .right .t1 .progress {
+  display: inline-block;
+  width: 2.13333333rem;
+  height: 0.4rem;
+  background-color: #ffb7b7;
+  border-radius: 0.2rem;
+  border: 1px solid #fc353a;
+  position: relative;
+  box-sizing: content-box;
+}
+.discount .content li > .right .t1 .progress em {
+  color: #fff;
+  font-style: normal;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.discount .content li > .right .t1 .progress i {
+  display: inline-block;
+  font-style: normal;
+  height: 100%;
+  background-color: #fc353a;
+  border-radius: 0.4rem;
+}
+.discount .content li > .right .t1 .count {
+  font-size: 0.32rem;
+  color: #fc4a54;
+  display: inline-block;
+  margin-left: 0.26666667rem;
+  vertical-align: top;
+}
+.discount .content li > .right .t2 {
+  position: absolute;
+  bottom: 0.2rem;
+  left: 0;
+  width: 100%;
+}
+.discount .content li > .right .t2 a {
+  display: block;
+}
+.discount .content li > .right .t2 .left {
+  border: 1px dashed #e55b76;
+  height: 0.66666667rem;
+  padding: 0.06666667rem;
+}
+.discount .content li > .right .t2 .left a {
+  color: #e55b76;
+  font-size: 0.34666667rem;
+}
+.discount .content li > .right .t2 .right {
+  width: 1.53333333rem;
+  height: 0.73333333rem;
+  background-color: #ff5e5d;
+  text-align: center;
+  line-height: 0.73333333rem;
+  border-radius: 0.13333333rem;
+  margin-right: 0.2rem;
+}
+.discount .content li > .right .t2 .right a {
+  color: #fff;
+  font-size: 0.32rem;
+}

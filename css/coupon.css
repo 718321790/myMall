@@ -1,0 +1,30 @@
+.app {
+  background-color: #fff;
+}
+.main {
+  margin-top: 1.33333333rem;
+  padding: 0.4rem 0.2rem 0.2rem;
+  width: 100%;
+}
+.main li {
+  width: 32%;
+  border: 1px solid #f2f2f2;
+}
+.main li:not( :nth-child(3n)) {
+  margin-right: 2%;
+  margin-bottom: 2%;
+}
+.main li a {
+  display: block;
+}
+.main li a img {
+  width: 1.33333333rem;
+  height: 1.33333333rem;
+  margin: 0 auto;
+  margin-top: 0.2rem;
+}
+.main li a p {
+  font-size: 0.32rem;
+  text-align: center;
+  line-height: 0.53333333rem;
+}

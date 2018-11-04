@@ -1,0 +1,32 @@
+@import 'variable';
+.app{
+    background-color: #fff;
+}
+.main{
+    // background-color: aqua;
+    margin-top: 100rem/@base;
+    padding: 30rem/@base 15rem/@base 15rem/@base;
+    width: 100%;
+    li{
+        width: 32%;
+        border: 1px solid #f2f2f2;
+        &:not(:nth-child(3n)){
+            margin-right: 2%;
+            margin-bottom: 2%;
+        }
+        a{
+            display: block;
+            img{
+                width: 100rem/@base;
+                height: 100rem/@base;
+                margin: 0 auto;
+                margin-top: 15rem/@base;
+            }
+            p{
+                font-size: 24rem/@base;
+                text-align: center;
+                line-height: 40rem/@base;
+            }
+        }
+    }
+}

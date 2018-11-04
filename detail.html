@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+    
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>商品详情</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/detail.css">
+    <script src="./lib/flexible/flexible.js"></script>
+</head>
+
+<body>
+    <div class="app">
+        <!-- 头部 -->
+        <div class="app-header clearfix">
+            <a href="index.html" class="logo fl">
+                <img src="./images/header_logo.png" alt="">
+            </a>
+            <a href="#" class="download fr">
+                <img src="./images/header_app.png" alt="">
+            </a>
+        </div>
+        <!-- 搜索狂 -->
+        <div class="app-search clearfix">
+            <div class="fr btn-search">搜索</div>
+            <div class="search-left">
+                <input type="search" placeholder="请输入你想比价的商品" name="" id="">
+            </div>
+        </div>
+
+
+        <!-- 产品 -->
+        <div class="detail">
+            <div class="title clearfix">
+                <div class="left fl">
+                    <a href="index.html">首页 ></a>
+                    <span class="category"></span>
+                    <a href="javascript:location.reload();" class="typename"></a>
+                </div>
+                <div class="right fr btn-choice">筛选</div>
+            </div>
+            
+            <div class="main">
+                <div class="banner">
+                    <!-- 挖个坑 -->
+                </div>
+                <ul class="info">
+                    <li class="item1 clearfix">
+                        <span>比价购买</span>
+                        <span>产品参数</span>
+                        <span>评论(5)</span>
+                    </li>
+                    <li class="item2 clearfix">
+                        <div class="left fl">
+                            <img src="./images/slogo.png" alt="">
+                            <span>京东商城</span>
+                        </div>
+                        <div class="right fr">
+                            <span>￥1999.00</span>
+                            <a>去购买</a>
+                        </div>
+                    </li>
+                    <li class="item3">
+                        * 实际价格以各网站列出的实时售价为准,我们提供的价格可能有数小时至数日的延迟。
+                    </li>
+                </ul>
+                <div class="comments">
+                    <h2 class="title">网友评价</h2>
+                    <!-- 评价内容 -->
+                    <div class="content">
+                        <!-- 挖个坑 -->
+
+                        
+                    </div>
+
+                    <!-- 查看更多评价 -->
+                    <div class="more-com">查看更多评价</div>
+                </div>
+
+                
+            </div>
+        </div>
+
+        <!-- 底部 -->
+        <div class="app-footer">
+            <div class="footer-fn clearfix">
+                <a href="#">
+                    <span>登录</span>
+                </a>
+                <a href="#">
+                    <span>注册</span>
+                </a>
+                <a href="javascript:;" class="backTop">  
+                    <span class="target"><img src="./images/top.jpg" alt="">返回顶部</span>
+                </a>
+            </div>
+            <div class="footer-cont">
+                <div class="cont1">
+                    <a href="#" class="mobile">手机APP下载</a>
+                    <a href="#">慢慢买手机版</a><span style="color: #7f8388;">--掌上比价平台</span>
+                    
+                </div>      
+                <p href="#" style="color: #7f8388;">m.manmanbuy.com</p> 
+            </div>
+        </div>
+    </div>
+
+    <script type="text/template" id="tmp">
+        {{brandName}}
+    </script>
+
+    <script type="text/template" id="tmp1">    
+        <a href="productlist.html?categoryid={{result[0].categoryId}}">{{result[0].category}} ></a>
+    </script>
+
+    <script type="text/template" id="tmp2">
+        <h2>{{result[0].productName}}</h2>
+        <div class="imgbox">
+            {{@ result[0].productImg}}
+        </div>
+        <img src="./images/sc.jpg" alt="收藏">
+    </script>
+
+    <script type="text/template" id="tmp3">
+        {{each result v i}}
+        <div class="item">
+            <div class="item-tit">
+                <div class="user">{{v.comName}}</div>
+                <div class="user-info">
+                    <div class="date">{{v.comTime}}</div>
+                    <div class="from">{{v.comFrom}}</div>
+                </div>
+            </div>
+            <div class="item-cont">{{v.comContent}}</div>
+        </div>
+        {{/each}}
+    </script>
+
+    
+
+    
+
+    <script src="./lib/jquery/jquery.min.js"></script>
+    <script src="./lib/artTemplate/template-web.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/detail.js"></script>
+
+</body>
+
+</html>

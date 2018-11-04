@@ -1,0 +1,37 @@
+.app {
+  background-color: #fff;
+}
+.main {
+  margin-top: 1.33333333rem;
+}
+.main ul {
+  padding: 0.26666667rem 1.2rem;
+}
+.main ul li {
+  overflow: hidden;
+  width: auto;
+  float: left;
+  display: block;
+  height: 1.2rem;
+  background-color: #f4f4f4;
+  border: 1px solid #c5c5c5;
+  padding: 0.33333333rem 0.24rem;
+  margin: 0.13333333rem;
+}
+.main ul li a {
+  display: block;
+}
+.main ul li a:hover {
+  cursor: pointer;
+}
+.main ul li a img {
+  width: 0.45333333rem;
+  height: 0.45333333rem;
+  float: left;
+}
+.main ul li a p {
+  float: right;
+  font-size: 0.48rem;
+  line-height: 0.53333333rem;
+  margin-left: 0.26666667rem;
+}

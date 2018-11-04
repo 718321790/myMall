@@ -1,0 +1,41 @@
+.product_desc {
+  margin: 0 0.26666667rem;
+  margin-top: 1.33333333rem;
+}
+.product_desc h3 {
+  font-size: 0.53333333rem;
+  padding: 0.53333333rem 0;
+}
+.product_desc .tips {
+  font-size: 0.32rem;
+  color: #999;
+  padding-bottom: 0.53333333rem;
+}
+.product_desc .mixin .imgbox img {
+  width: 3.73333333rem;
+  height: 3.73333333rem;
+}
+.product_desc p {
+  font-size: 0.46666667rem;
+  color: #424e59;
+}
+.product_desc .imgshow {
+  padding: 0.26666667rem 0;
+}
+.buy {
+  margin: 0.53333333rem;
+  height: 0.8rem;
+  background: linear-gradient(180deg, #ff8a00 0%, #ff9000 100%);
+  color: #fff;
+  font-size: 0.37333333rem;
+  text-align: center;
+  line-height: 0.8rem;
+  border-radius: 0.13333333rem;
+}
+.info {
+  margin: 0.8rem 0.26666667rem;
+}
+.ui-border-b .con .content img {
+  width: 0.53333333rem;
+  height: 0.53333333rem;
+}

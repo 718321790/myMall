@@ -1,0 +1,201 @@
+@import 'variable';
+
+.app{
+    background-color: #fff;
+    min-width: 320px;
+    max-width: 750px;
+    margin: 0 auto;
+    position: relative;
+}
+.app-header{
+    height: 100rem/@base;
+    width: 100%;
+    max-width: 750px;
+    background-color: @mainColor;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    z-index: 999;
+    .back{
+        position: absolute;
+        left: 25rem/@base;
+        top: 20rem/@base;
+        width: 100rem/@base;
+        height: 100rem/@base;
+        display: block;
+        background: url('../images/back.png') no-repeat;
+        background-size: 32rem/@base  54rem/@base;
+    }
+    h2{
+        font-size: 45rem/@base;
+        color: #fff;
+        text-align: center;
+        line-height: 100rem/@base;
+    }
+    .download{
+        position: absolute;
+        right: 25rem/@base;
+        top: 20rem/@base;
+        width: 68rem/@base;
+        height: 68rem/@base;                 
+        img{
+            width: 68rem/@base;
+            height: 68rem/@base;            
+        }
+    }
+}
+
+.app-footer{
+    height: 190rem/@base;
+    margin-top: 55rem/@base;
+    background-color: #efefef;
+    .footer-fn{ 
+        a{
+            border: 1px solid #ccc;
+            font-size: 28rem/@base;
+            width: 30%;
+            height: 70rem/@base;
+            display: block;
+            float: left;
+            &.backTop{
+                width: 40%;
+                .target{
+                    position: relative;
+                }
+                img{
+                    width: 30rem/@base;
+                    height: 30rem/@base;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    transform: translate(-120%, 10%);
+                }
+                
+            }
+            text-align: center;
+            line-height: 70rem/@base;
+        }
+    }
+    .footer-cont{
+        height: 120rem/@base;
+        text-align: center;
+        padding: 15rem/@base 0;
+        .cont1{
+            height: 60rem/@base;
+        }   
+        .mobile{
+            color: #ff384a;
+        }
+        a,span{
+            font-size: 24rem/@base;
+            
+        }
+        p{
+            font-size: 20rem/@base;            
+        }
+    }
+}
+
+
+// 渲染的城市列表的一些样式
+#disstorck{
+    width: 275rem/@base;
+    margin: 0 auto;
+    font-size: 26rem/@base;
+    padding: 20rem/@base;
+    box-shadow: 0 0 3px 1px rgba(0,0,0,.2);
+    li{
+        box-sizing: content-box;
+        position: relative;
+        border-bottom: 1px dashed #ccc;
+        padding: 0 20rem/@base;
+        height: 45rem/@base;
+        a{
+            strong{
+                text-align: right;
+                position: absolute;
+                right: 20rem/@base;
+                top: 0;
+                color: #f2760e;
+            }
+        }
+    }
+}
+
+// 获取的评论表的一些样式
+.comment{
+    padding: 0 20rem/@base;
+    .tit{
+        font-size: 34rem/@base;
+        line-height: 88rem/@base;
+        height: 88rem/@base;
+    }
+    .reply{
+        .form{
+            border: 1px solid #ccc;
+            
+            textarea{
+                height: 150rem/@base;
+                font-size: 30rem/@base;
+            }
+        }
+        .ctrl{
+            background-color: #fbfbfb;
+            height: 75rem/@base;
+            position: relative;
+            input{
+                display: block;
+                height: 100%;
+                width: 200rem/@base;
+                background-color: #ff841d;
+                color: #fff;
+                border: none;
+                position: absolute;
+                right: 0;
+                top: 0;
+                font-size: 34rem/@base;
+            }
+        }
+    }
+    .list{
+        .ui-border-b{
+            &::after{
+                content: '';
+                display: block;
+                clear: both;
+                height: 0;
+            }
+            padding: 30rem/@base 0;
+            .userimg{
+                float: left;
+                width: 100rem/@base;
+                img{
+                    width: 80rem/@base;
+                    height: 80rem/@base;
+                    border-radius: 50%;
+                }
+            }
+            .con{
+                font-size: 30rem/@base;
+                overflow: hidden;
+                .name{
+                    .username{
+                        float: left;
+                        color: #8bc7db;
+                        font-size: 28rem/@base;
+                    }
+                    .time{
+                        float: right;
+                        font-size: 24rem/@base;
+                        color:#999;
+                    }
+                }
+                .content{
+                    line-height: 50rem/@base;
+                }
+            }
+        }
+        
+    }
+}

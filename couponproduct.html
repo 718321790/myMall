@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>优惠券</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/common3.css">
+    <link rel="stylesheet" href="./css/couponproduct.css">
+    <script src="./lib/flexible/flexible.js"></script>
+</head>
+
+<body>
+    <div class="app">
+        <!-- 头部 -->
+        <div class="app-header clearfix">
+            <a class="back" href="javascript:history.back();"></a>
+            <h2>优惠券</h2>
+            <a href="#" class="download fr">
+                <img src="./images/header_app.png" alt="">
+            </a>
+        </div>
+
+        <div class="main">
+            <div class="tit">
+                    --点餐前出示手机中的优惠券，即可享受优惠--
+                </div>
+            <ul class="clearfix">
+                <!-- 挖个坑 -->
+                <!-- <li class="fl">
+                    <a href="">
+                        <div class="imgbox">
+                            <img src="./images/kdj.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <p>C27  两人小食组 新奥尔良烤翅2块+薯条(中)+黄金鸡块5块+劲爆鸡米花(小) 2016年10月凭肯德基优惠券</p>
+                            <p class="price">￥ 28</p>
+                            <p class="tips">有效期至10月31日</p>
+                        </div>
+                    </a>
+                </li> -->
+            </ul>
+        </div>
+
+
+
+
+        <!-- 底部 -->
+        <div class="app-footer">
+            <div class="footer-fn clearfix">
+                <a href="#">
+                    <span>登录</span>
+                </a>
+                <a href="#">
+                    <span>注册</span>
+                </a>
+                <a href="javascript:;" class="backTop">
+                    <span class="target">
+                        <img src="./images/top.jpg" alt="">返回顶部</span>
+                </a>
+            </div>
+            <div class="footer-cont">
+                <div class="cont1">
+                    <a href="#" class="mobile">手机APP下载</a>
+                    <a href="#">慢慢买手机版</a>
+                    <span style="color: #7f8388;">--掌上比价平台</span>
+                </div>
+                <a href="#" style="display: block;color: #7f8388;">m.manmanbuy.com</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 模态框 -->
+    <div class="modal-wrapper" style="display: none;">
+        <div class="off">
+            <img src="./images/cha.png" alt="">
+        </div>
+        <div class="modal">
+            <div class="imgbox">
+                <img src="./images/kdj.jpg" alt="">
+            </div>
+            <div class="left-arrow">
+                <img src="./images/left_arrow.png" alt="">
+            </div>
+            <div class="right-arrow">
+                <img src="./images/right_arrow.png" alt="">                
+            </div>
+        </div>
+    </div>
+
+
+  
+    <script type="text/template" id="tmp">
+        {{each result v i }}
+        <li class="fl">
+            <a href="javascript:;">
+                <div class="imgbox">
+                    {{@v.couponProductImg}}
+                </div>
+                <div class="content">
+                    <p>{{v.couponProductName}}</p>
+                    <p class="price">{{v.couponProductPrice}}</p>
+                    <p class="tips">{{v.couponProductTime}}</p>
+                </div>
+            </a>
+        </li>
+        {{/each}}
+    </script>
+
+
+
+    <script src="./lib/jquery/jquery.min.js"></script>
+    <script src="./lib/artTemplate/template-web.js"></script>
+    <script src="./lib/IScroll/iscroll.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/couponproduct.js"></script>
+</body>
+
+</html>
